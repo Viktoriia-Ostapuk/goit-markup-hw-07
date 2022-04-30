@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.header__logo {
+.logo {
     text-decoration: none;
     font-family: Raleway;
     font-weight: 700;
@@ -23,7 +23,7 @@
     color: var(--accent-txt-cl);
 }
 
-.header__logo--black {
+.logo__black {
     color: var(--title-cl);
 }
 
@@ -51,9 +51,7 @@
 
 .nav__link--current {
     color: #2196f3;
-}
-
-.nav__link--current::after {
+&::after {
     content: '';
     bottom: -1px;
     left: 0;
@@ -64,16 +62,21 @@
     height: 4px;
     position: absolute;
 }
+}
+
+
 
 .nav__list {
     display: flex;
     list-style-type: none;
     margin-left: 93px;
-}
-
-.nav__list .nav__item:not(:last-child) {
+& .nav__item:not(:last-child) {
     margin-right: 50px;
 }
+}
+
+
+
 
 
 
@@ -84,11 +87,12 @@
     display: flex;
     list-style-type: none;
     margin-left: auto;
-}
 
-.contacts .contacts__item:not(:last-child) {
+& .contacts__item:not(:last-child) {
     margin-right: 50px;
-}
+}}
+
+
 
 
 .contacts__link {

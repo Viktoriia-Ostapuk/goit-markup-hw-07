@@ -1,21 +1,19 @@
 /*PORTFOLIO*/
 /*LIST OF BUTTONS*/
-.portfolio {
-    margin-top: 100px;
-    margin-bottom: 94px;
-}
+
 
 .button-list {
     display: flex;
     list-style-type: none;
     justify-content: center;
     margin-bottom: 50px;
+    & .button-list__item:not(:last-child) {
+        margin-right: 8px;
+    }
 
 }
 
-.button-list .button-list__item:not(:last-child) {
-    margin-right: 8px;
-}
+
 
 .button-list__style {
     cursor: pointer;
@@ -68,21 +66,23 @@
     &:hover {
         transform: translateY(0);
     }
-}
-
-.cards .cards__content:nth-child(3n) {
+& .cards__content:nth-child(3n) {
     margin-right: 0;
 }
-
-.cards__content:nth-last-child(-n+3) {
-    margin-bottom: 0;
 }
+
+
+
+
 
 
 .cards__content {
     margin-right: 30px;
     margin-bottom: 30px;
     width: 370px;
+&:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
 }
 
 

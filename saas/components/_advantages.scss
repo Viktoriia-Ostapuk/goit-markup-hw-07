@@ -1,13 +1,9 @@
 /*ADVANTAGES*/
+
+
+
+
 .features {
-    padding: 94px 0;
-}
-
-.features__list .features__item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.features__list {
     display: flex;
     list-style-type: none;
 }
@@ -15,10 +11,13 @@
 .features__item {
     width: 270px;
     align-items: center;
+    .features &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 
-.features__fon {
+.features__icon-wrapper {
     display: flex;
     width: 270px;
     height: 120px;

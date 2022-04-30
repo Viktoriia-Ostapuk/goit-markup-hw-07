@@ -30,17 +30,23 @@
     justify-content: center;
 }
 
-.modal__check {
-    appearance: none;
-    display: flex;
-    align-items: center;
-}
 
 .modal__check {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
+    appearance: none;
+    display: flex;
+    align-items: center;
+    &:checked+.modal__check-text span {
+        background-image: url(..//images/icons.svg#icon-icon-check);
+        background-color: var(--accent-bg-cl);
+        border: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-origin: border-box;
+    }
 }
 
 .modal__check-text span {
@@ -54,14 +60,7 @@
     justify-content: center;
 }
 
-.modal__check:checked+.modal__check-text span {
-    background-image: url(..//images/icons.svg#icon-icon-check);
-    background-color: var(--accent-bg-cl);
-    border: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: border-box;
-}
+
 
 
 

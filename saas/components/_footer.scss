@@ -11,17 +11,9 @@
     align-items: baseline;
 }
 
-.footer__logo {
-    text-decoration: none;
-    font-family: Raleway;
-    font-weight: 700;
-    line-height: 1.19;
-    font-size: 26px;
-    letter-spacing: 0.03em;
-    color: var(--accent-txt-cl);
-}
 
-.footer__logo--white {
+
+.logo__white {
     color: var(--light-txt-cl);
 }
 
@@ -32,11 +24,12 @@
 
 .address__details {
     list-style-type: none;
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
 }
 
-.address__details:not(:last-child) {
-    margin-bottom: 9px;
-}
+
 
 .address__item--white {
     color: var(--light-txt-cl);

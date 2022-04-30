@@ -5,7 +5,7 @@
 }
 
 
-.activity__title {
+.section__title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -15,19 +15,25 @@
     color: var(--title-cl);
 }
 
+.section--padding-reset{
+    padding-top: 0;
+}
+
+
 .activity__list {
     display: flex;
     list-style-type: none;
 }
 
-.activity__item+.activity__item {
-    margin-left: 30px;
 
-}
 
 
 .activity__item {
     position: relative;
+   & + & {
+    margin-left: 30px;
+
+} 
 }
 
 .activity__text {
